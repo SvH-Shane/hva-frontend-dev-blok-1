@@ -36,15 +36,16 @@ Responsive, ik kan daarin nog wel wat netter werken!
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-link naar de website die je gaat namaken óf de naam van je eigen ontwerp
+https://nos.nl/
 
 #### Screenshot(s) van de eerste pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Home page NOS  
+<img src="images/nos-home-s.png" width="375px" alt="Small, NOS home">
+<img src="images/nos-l.png" width="375px" alt="Desktop Large, NOS home">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-hier de naam van de pagina  
-<img src="images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+Home page NOS
+<img src="images/nos-s.png" width="375px" alt="Artikel pagina NOS, small">
 
 </details>
 
