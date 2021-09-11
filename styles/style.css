@@ -44,7 +44,6 @@ nav {
     position: fixed;
     display: flex;
     justify-content: space-between;
-    flex-grow: 1;
     width: 100%;
     height: 4.4em;
     align-items: center;
@@ -52,6 +51,12 @@ nav {
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%);
     background-color: #fff;
     z-index: 99;
+}
+
+nav ol {
+    display: flex;
+    align-items: center;
+    padding: 0;
 }
 
 nav svg {
