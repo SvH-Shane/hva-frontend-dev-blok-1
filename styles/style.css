@@ -1,5 +1,80 @@
 /* CSS Document */
 *, *::after, *::before {
-  box-sizing:border-box;  
+    margin: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style-type: none;
 }
 
+:root {
+/* Kleurenboek */
+    --main-color: #666666;
+    --primary-color: #e61e14;
+    --second-color: #666666;
+    --usefull-color: #999999;
+
+/* Witruimtes, afstanden */
+    --padding-s: .89em 0;
+    --padding-m: .89em;
+    --margin-s: .67em;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Helvetica Neue';
+    font-weight: 100;
+    font-style: normal;
+    line-height: 1.15;
+}
+
+h1 {
+    color:var(--main-color);
+}
+
+input, button, submit {
+    border:none;
+    background: none;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    width: 100%;
+    height: 4.4em;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%);
+    background-color: #fff;
+    z-index: 99;
+}
+
+nav svg {
+    width: 65px;
+    margin: 0 0.5rem 0 0;
+}
+
+nav button {
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    font-weight: 400;
+    padding: 0 0.5rem;
+    letter-spacing: 0.0167rem;
+    color: var(--second-color);
+    font-family: inherit;
+}
+
+nav button svg {
+    width: 0.5rem;
+    margin: 0.25rem 0px 0px 0.25rem;
+}
+
+.header {
+    padding-top:150px;
+}
