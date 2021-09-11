@@ -12,6 +12,7 @@
     --primary-color: #e61e14;
     --second-color: #666666;
     --usefull-color: #999999;
+    --light-extra: #cccccc;
 
 /* Witruimtes, afstanden */
     --padding-s: .89em 0;
@@ -54,9 +55,28 @@ nav {
 }
 
 nav ol {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 0;
+}
+
+nav ol:last-child button svg {
+    width: auto;
+    height: 1.25rem;
+    transform: rotate(90deg);
+}
+
+nav ol:last-child a {
+    padding-left: 1.25rem;
+}
+
+nav ol:last-child li:last-child::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 1px;
+    background: var(--light-extra);
 }
 
 nav svg {
