@@ -13,6 +13,7 @@
     --second-color: #666666;
     --usefull-color: #999999;
     --light-extra: #dddddd;
+    --natural: #ffffff;
 
 /* Witruimtes, afstanden */
     --padding-s: .89em 0;
@@ -30,6 +31,13 @@ body {
 
 h1 {
     color:var(--main-color);
+}
+
+h2 {
+    font-family: 'Effra';
+    font-size: 22px;
+    font-weight: 500;
+    letter-spacing: 1px;
 }
 
 input, button, submit {
@@ -64,11 +72,13 @@ nav ol {
 nav ol:last-child button svg {
     width: auto;
     height: 1.25rem;
+    margin: 0;
+    padding: 0;
     transform: rotate(90deg);
 }
 
 nav ol:last-child a {
-    padding-left: 1.25rem;
+    padding-left: 1rem;
 }
 
 nav ol:last-child li:last-child::before {
@@ -82,7 +92,8 @@ nav ol:last-child li:last-child::before {
 
 nav ol:last-child li:last-child svg {
     width: 1.25rem;
-    margin: 0;
+    height: 1.25rem;
+    margin: 0.2rem 0 0 0.2rem;
     color: var(--main-color);
 }
 
@@ -108,5 +119,31 @@ nav button svg {
 }
 
 .header {
-    padding-top:150px;
+    padding-top:4.4em;
+}
+
+.header figure {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.header figure::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.7));
+    z-index: 2;
+}
+
+.header figcaption {
+    position: absolute;
+    color: var(--natural);
+    line-height: 1.11;
+    padding: 1em;
+    bottom: 1em;
+    z-index: 99;
 }

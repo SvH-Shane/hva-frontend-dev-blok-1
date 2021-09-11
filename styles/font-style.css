@@ -9,6 +9,15 @@
 }
 
 @font-face {
+    font-family: 'Effra';
+    src: url('../assets/fonts/Effra-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Effra-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Helvetica Neue';
     src: url('../assets/fonts/HelveticaNeue-Medium.woff') format('woff');
     font-weight: 500;
