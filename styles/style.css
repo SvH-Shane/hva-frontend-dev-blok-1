@@ -151,7 +151,7 @@ nav button svg {
 
 .header-articles {
     display: flex;
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 2rem 1rem;
 }
 
 .header-articles figure {
@@ -160,6 +160,9 @@ nav button svg {
 }
 
 .header-articles figure img {
+    min-height: 7.5rem;
+    width: 100%;
+    object-fit: cover;
     border-radius: 5px;
 }
 
@@ -167,4 +170,29 @@ nav button svg {
     margin-top: .5rem;
     font-family: "HelveticaNeue";
     font-size: 14px;
+}
+
+.stories {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+}
+
+.stories figure {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.stories figure img {
+    min-height: 1.5rem;
+    width: 6.5rem;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.stories figcaption {
+    font-family: "HelveticaNeue";
+    font-size: 14px;
+    padding-left: 1rem;
 }
