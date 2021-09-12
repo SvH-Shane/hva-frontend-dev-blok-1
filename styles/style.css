@@ -13,6 +13,7 @@
     --second-color: #666666;
     --usefull-color: #999999;
     --light-extra: #dddddd;
+    --light-grey: #eeeeee;
     --natural: #ffffff;
 
 /* Witruimtes, afstanden */
@@ -151,7 +152,7 @@ nav button svg {
 
 .header-articles {
     display: flex;
-    padding: 1rem 0 2rem 1rem;
+    padding: 1rem 0 1rem 1rem;
 }
 
 .header-articles figure {
@@ -183,10 +184,12 @@ nav button svg {
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding: 1rem 0px calc(1rem - 1px);
+    border-bottom: 1px solid var(--light-grey);
 }
 
 .stories figure img {
-    min-height: 1.5rem;
+    min-height: 4.875rem;
     width: 6.5rem;
     object-fit: cover;
     border-radius: 5px;
