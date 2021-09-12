@@ -180,7 +180,8 @@ nav button svg {
 }
 
 .stories figure {
-    display: inline-flex;
+    display: flex;
+    align-items: center;
     flex-direction: row;
 }
 
