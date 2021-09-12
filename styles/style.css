@@ -123,13 +123,13 @@ nav button svg {
     margin-top:4.4em;
 }
 
-.header figure {
+.header figure:first-of-type {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.header figure::before {
+.header figure:first-of-type::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -140,11 +140,30 @@ nav button svg {
     z-index: 2;
 }
 
-.header figcaption {
+.header figcaption:first-of-type {
     position: absolute;
     color: var(--natural);
     line-height: 1.11;
     padding: 1em 1em 0 1em ;
     bottom: 1em;
     z-index: 99;
+}
+
+.header-articles {
+    display: flex;
+    padding: 1rem 0 1rem 1rem;
+}
+
+.header-articles figure {
+    margin-right: 1rem;
+    width: 50%;
+}
+
+.header-articles figure img {
+    border-radius: 5px;
+}
+
+.header-articles figure figcaption {
+    font-family: "HelveticaNeue";
+    font-size: 14px;
 }
