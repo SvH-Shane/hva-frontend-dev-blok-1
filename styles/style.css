@@ -164,6 +164,7 @@ nav button svg {
 }
 
 .header-articles figure figcaption {
+    margin-top: .5rem;
     font-family: "HelveticaNeue";
     font-size: 14px;
 }
