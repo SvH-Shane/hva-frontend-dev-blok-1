@@ -200,3 +200,37 @@ nav button svg {
     font-size: 14px;
     padding-left: 1rem;
 }
+
+aside section {
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 8px 0px;
+}
+
+aside section a {
+    display: flex;
+    align-items: center;
+}
+
+aside section a svg:first-child {
+    width: 48px;
+    margin-right: 1rem;
+}
+
+aside section a svg:last-child {
+    width: 16px;
+    height: 24px;
+    align-content: center;
+}
+
+aside section a span {
+    font-weight: 500;
+    color: black;
+    margin: auto;
+    width: 100%;
+}
+
+main {
+    margin-bottom: 600px; ///* TEMP: DIT NA OPLEVERING VERWIJDEREN  */
+}
