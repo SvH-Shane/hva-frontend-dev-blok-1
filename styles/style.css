@@ -1,14 +1,16 @@
 /* CSS Document */
-*, *::after, *::before {
+*, *::after, *::before, a {
     margin: 0;
     box-sizing:border-box;
     text-decoration: none;
     list-style-type: none;
+    color: inherit;
 }
 
 :root {
 /* Kleurenboek */
     --main-color: #666666;
+    --dark-color: #222222;
     --primary-color: #e61e14;
     --second-color: #666666;
     --usefull-color: #999999;
@@ -24,9 +26,11 @@
 
 body {
     font-size: 16px;
+    color: var(--dark-color);
     font-family: 'Helvetica Neue';
     font-weight: 100;
     font-style: normal;
+    letter-spacing: 0.3px;
     line-height: 1.15;
 }
 
@@ -209,25 +213,58 @@ aside section {
 }
 
 aside section a {
+    position: relative;
     display: flex;
     align-items: center;
+    padding: 1rem 0;
+}
+
+aside section a:first-child {
+    padding: 0 0 1rem 0;
+}
+
+aside section a:last-child {
+    padding: 1rem 0 0 0;
+}
+
+aside section a:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(238, 238, 238);
+    height: 1px;
 }
 
 aside section a svg:first-child {
-    width: 48px;
+    max-width: 60px;
     margin-right: 1rem;
 }
 
 aside section a svg:last-child {
-    width: 16px;
-    height: 24px;
+    max-width: 16px;
+    max-height: 24px;
     align-content: center;
+}
+
+aside section a p {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
 }
 
 aside section a span {
     font-weight: 500;
-    color: black;
+    color: #222222;
+}
+
+aside section a span:last-child {
+    font-size: 14px;
+    color: var(--main-color);
     margin: auto;
+    font-weight: 500;
     width: 100%;
 }
 
