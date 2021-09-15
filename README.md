@@ -39,8 +39,8 @@ Responsive, ik kan daarin nog wel wat netter werken!
 https://nos.nl/
 
 <details open>
-<summary>Home page NOS</summary>
 #### Screenshot(s) van de eerste pagina (small screen):
+<summary>Home page NOS</summary>
 Home page NOS  
 <img src="images/nos-home-s.png" width="375px" alt="Small, NOS home">
 </details>
