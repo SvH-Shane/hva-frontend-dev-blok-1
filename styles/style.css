@@ -124,17 +124,17 @@ nav button svg {
     margin: 0.25rem 0px 0px 0.25rem;
 }
 
-.header {
+header {
     margin-top:4.4em;
 }
 
-.header figure:first-of-type {
+header figure:first-of-type {
     position: relative;
     overflow: hidden;
     width: 100%;
 }
 
-.header figure:first-of-type::before {
+header figure:first-of-type::before {
     content: "";
     position: absolute;
     top: 0px;
@@ -145,7 +145,7 @@ nav button svg {
     z-index: 2;
 }
 
-.header figcaption:first-of-type {
+header figcaption:first-of-type {
     position: absolute;
     color: var(--natural);
     line-height: 1.11;
