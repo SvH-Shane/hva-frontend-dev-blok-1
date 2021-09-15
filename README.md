@@ -45,11 +45,11 @@ Home page NOS
 <img src="images/nos-home-s.png" width="375px" alt="Small, NOS home">
 </details>
 
-<img src="images/nos-l.png" width="375px" alt="Desktop Large, NOS home">
-
+<details open>
+<summary>Artikel page NOS</summary>
 #### Screenshot(s) van de tweede pagina (small screen):
-Home page NOS
 <img src="images/nos-s.png" width="375px" alt="Artikel pagina NOS, small">
+</details>
 
 </details>
 
@@ -80,8 +80,7 @@ Home page NOS
 <summary>uitwerken voor 1e voortgang</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+Het namaken van de website van de NOS gaat erg goed. Waar ik alleen nu wel tegen aanloop is dat ik zo gefixeerd ben op het Mobile first principe dat ik niet uitkom met het responsive maken van de website. Ik heb hiervoor de elementen in volgorde wat anders geschikt, zodat ik straks beter uitkom. De NOS gebruikt namelijk 1 grote header op mobiel en maakt er twee van op desktop. Op mobiel lijkt hetgene wat wegvalt een extra sectie. Dit is dus niet zo. Vandaar dat ik het één en ander moet aanpassen.
 
 ### Agenda voor meeting
 samen met je groepje opstellen
