@@ -239,3 +239,12 @@ Nb. Wees specifiek ('css-tricks' als bron is niet specifiek genoeg).
 3. ...
 
 </details>
+
+
+<details open>
+<summary>Aantekeningen</summary>
+
+const derdeP = document.querySelecter
+
+
+</details>
