@@ -7,6 +7,16 @@
     color: inherit;
 }
 
+/* Defaults */
+input, button, submit {
+    border:none;
+    background: none;
+}
+
+.active {
+    color: var(--primary-color);
+}
+
 :root {
 /* Kleurenboek */
     --main-color: #666666;
@@ -22,10 +32,15 @@
     --padding-s: .89em 0;
     --padding-m: .89em;
     --margin-s: .67em;
+
+/* Letterkast formaat */
+    --large: 18px;
+    --normal: 16px;
+    --small: 14px;
 }
 
 body {
-    font-size: 16px;
+    font-size: var(--normal);
     color: var(--dark-color);
     font-family: 'Helvetica Neue';
     font-weight: 100;
@@ -34,8 +49,9 @@ body {
     line-height: 1.15;
 }
 
+/* Letterkast */
 h1 {
-    color:var(--main-color);
+    color: var(--main-color);
 }
 
 h2 {
@@ -45,15 +61,7 @@ h2 {
     letter-spacing: 1px;
 }
 
-input, button, submit {
-    border:none;
-    background: none;
-}
-
-.active {
-    color: var(--primary-color);
-}
-
+/* nav */
 nav {
     position: fixed;
     display: flex;
@@ -64,7 +72,7 @@ nav {
     align-items: center;
     padding: 1em;
     box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%);
-    background-color: #fff;
+    background-color: var(--natural);
     z-index: 99;
 }
 
@@ -92,7 +100,7 @@ nav ol:last-child li:last-child::before {
     position: absolute;
     height: 100%;
     width: 1px;
-    margin: 0px 0.25rem;
+    margin: 0 0.25rem;
     background: var(--light-extra);
 }
 
@@ -124,6 +132,7 @@ nav button svg {
     margin: 0.25rem 0px 0px 0.25rem;
 }
 
+/* Header */
 header {
     margin-top:4.4em;
 }
@@ -149,7 +158,7 @@ header figcaption:first-of-type {
     position: absolute;
     color: var(--natural);
     line-height: 1.11;
-    padding: 1em 1em 0 1em ;
+    padding: 1rem 1rem 0 1rem ;
     bottom: 1em;
     z-index: 99;
 }
