@@ -34,9 +34,9 @@ input, button, submit {
     --margin-s: .67em;
 
 /* Letterkast formaat */
-    --large: 18px;
-    --normal: 16px;
-    --small: 14px;
+    --f-large: 18px;
+    --f-normal: 16px;
+    --f-small: 14px;
 }
 
 body {
@@ -242,10 +242,45 @@ header figcaption:first-of-type {
     overflow: scroll;
 }
 
-.story-slider figure img {
+.story-slider__wrapper figure img {
+    position: relative;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    z-index: 2;
+}
+
+.story-slider__wrapper figure figcaption {
+    position: absolute;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 1rem;
+    bottom: 0;
+    font-family: "Effra";
+    font-size: var(--f-small);
+    font-weight: 500;
+    line-height: 1rem;
+    color: var(--natural);
+    z-index: 10;
+}
+
+.story-slider__wrapper figure figcaption svg {
+    width: 13px;
+    height: 15px;
+    margin-right: .25rem;
+}
+
+.story-slider__wrapper figure::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+    height: 50%;
+    background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(0,212,255,0) 100%);
+    z-index: 5;
 }
 
 aside section {

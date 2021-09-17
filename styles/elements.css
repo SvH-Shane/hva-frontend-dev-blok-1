@@ -1,0 +1,16 @@
+/* CSS Document */
+
+mark {
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    padding: .10rem .30rem;
+    margin-bottom: 0.75rem;
+    border-radius: 1rem;
+    font-family: "Effra";
+    color: var(--natural);
+    font-weight: 500;
+    font-size: 12px;
+    width: auto;
+    background: var(--primary-color);
+}
