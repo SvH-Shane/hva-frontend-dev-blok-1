@@ -1,0 +1,24 @@
+/* CSS Document */
+
+:root {
+/* Kleurenboek */
+    --main-color: #666666;
+    --dark-color: #222222;
+    --primary-color: #e61e14;
+    --second-color: #666666;
+    --usefull-color: #999999;
+    --usefull-extra-color: #888888;
+    --light-extra: #dddddd;
+    --light-grey: #eeeeee;
+    --natural: #ffffff;
+
+/* Witruimtes, afstanden */
+    --padding-s: .89em 0;
+    --padding-m: .89em;
+    --margin-s: .67em;
+
+/* Letterkast formaat */
+    --f-large: 18px;
+    --f-normal: 16px;
+    --f-small: 14px;
+}

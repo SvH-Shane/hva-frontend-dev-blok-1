@@ -13,29 +13,13 @@ input, button, submit {
     background: none;
 }
 
-:root {
-/* Kleurenboek */
-    --main-color: #666666;
-    --dark-color: #222222;
-    --primary-color: #e61e14;
-    --second-color: #666666;
-    --usefull-color: #999999;
-    --usefull-extra-color: #888888;
-    --light-extra: #dddddd;
-    --light-grey: #eeeeee;
-    --natural: #ffffff;
-
-/* Witruimtes, afstanden */
-    --padding-s: .89em 0;
-    --padding-m: .89em;
-    --margin-s: .67em;
-
-/* Letterkast formaat */
-    --f-large: 18px;
-    --f-normal: 16px;
-    --f-small: 14px;
+ul, li, ol {
+    margin-left: 0 ;
+    padding-left: 0;
 }
 
+
+/* Hier begint het leven */
 body {
     font-size: var(--normal);
     color: var(--dark-color);
@@ -336,8 +320,37 @@ aside section a span:last-child {
 
 footer {
     display: flex;
+    flex-direction: column-reverse;
+}
+
+.footer__main {
+    padding: 1rem 2rem;
+}
+
+.footer__cta {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1px solid var(--light-grey);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.footer__cta--item {
+    padding: 1rem 2rem;
+}
+
+.footer__cta--item:last-child {
+    border-top: 1px solid rgb(238, 238, 238);
 }
 
 footer h2 {
-    
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+footer li {
+    margin-bottom: 1rem;
+    line-height: 1.13;
+    font-weight: 500;
+    color: var(--second-color);
 }
