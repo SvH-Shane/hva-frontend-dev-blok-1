@@ -1,5 +1,9 @@
 /* CSS Document */
 
+.active {
+    color: var(--primary-color);
+}
+
 mark {
     display: flex;
     align-self: flex-start;

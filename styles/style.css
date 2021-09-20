@@ -13,10 +13,6 @@ input, button, submit {
     background: none;
 }
 
-.active {
-    color: var(--primary-color);
-}
-
 :root {
 /* Kleurenboek */
     --main-color: #666666;
@@ -24,6 +20,7 @@ input, button, submit {
     --primary-color: #e61e14;
     --second-color: #666666;
     --usefull-color: #999999;
+    --usefull-extra-color: #888888;
     --light-extra: #dddddd;
     --light-grey: #eeeeee;
     --natural: #ffffff;
@@ -45,20 +42,8 @@ body {
     font-family: 'Helvetica Neue';
     font-weight: 100;
     font-style: normal;
-    letter-spacing: 0.3px;
+    letter-spacing: .3px;
     line-height: 1.15;
-}
-
-/* Letterkast */
-h1 {
-    color: var(--main-color);
-}
-
-h2 {
-    font-family: 'Effra', 'Helvetica Neue';
-    font-size: 22px;
-    font-weight: 500;
-    letter-spacing: 1px;
 }
 
 /* nav */
@@ -71,7 +56,7 @@ nav {
     height: 4.4em;
     align-items: center;
     padding: 1em;
-    box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 12%);
+    box-shadow: 0 .125rem .25rem 0 rgb(0 0 0 / 12%);
     background-color: var(--natural);
     z-index: 99;
 }
@@ -100,20 +85,20 @@ nav ol:last-child li:last-child::before {
     position: absolute;
     height: 100%;
     width: 1px;
-    margin: 0 0.25rem;
+    margin: 0 .25rem;
     background: var(--light-extra);
 }
 
 nav ol:last-child li:last-child svg {
     width: 1.25rem;
     height: 1.25rem;
-    margin: 0.2rem 0 0 0.2rem;
+    margin: .2rem 0 0 .2rem;
     color: var(--main-color);
 }
 
 nav svg {
-    width: 65px;
-    margin: 0 0.5rem 0 0;
+    width: 55px;
+    margin: 0 .5rem 0 0;
 }
 
 nav button {
@@ -121,15 +106,15 @@ nav button {
     align-items: center;
     font-size: 1em;
     font-weight: 400;
-    padding: 0 0.5rem;
-    letter-spacing: 0.0167rem;
+    padding: 0 .5rem;
+    letter-spacing: .0167rem;
     color: var(--second-color);
     font-family: inherit;
 }
 
 nav button svg {
-    width: 0.5rem;
-    margin: 0.25rem 0px 0px 0.25rem;
+    width: .5rem;
+    margin: .25rem 0px 0px .25rem;
 }
 
 /* Header */
@@ -150,7 +135,7 @@ header figure:first-of-type::before {
     left: 0px;
     width: 100%;
     height: 99%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0.7));
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, .7));
     z-index: 2;
 }
 
@@ -286,7 +271,7 @@ header figcaption:first-of-type {
 aside section {
     margin: 1rem;
     padding: 1rem;
-    border-radius: 0.25rem;
+    border-radius: .25rem;
     box-shadow: rgb(0 0 0 / 10%) 0px 2px 8px 0px;
 }
 
@@ -323,6 +308,7 @@ aside section a svg:first-child {
 aside section a svg:last-child {
     max-width: 16px;
     max-height: 24px;
+    color: var(--usefull-extra-color);
     align-content: center;
 }
 
@@ -334,6 +320,7 @@ aside section a p {
 }
 
 aside section a span {
+    padding-bottom: .25rem;
     font-weight: 500;
     color: #222222;
 }
@@ -342,10 +329,15 @@ aside section a span:last-child {
     font-size: 14px;
     color: var(--main-color);
     margin: auto;
-    font-weight: 500;
+    line-height: 1;
+    font-weight: 400;
     width: 100%;
 }
 
-main {
-    margin-bottom: 600px; ///* TEMP: DIT NA OPLEVERING VERWIJDEREN  */
+footer {
+    display: flex;
+}
+
+footer h2 {
+    
 }
