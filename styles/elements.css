@@ -29,3 +29,14 @@ mark {
     color: var(--primary-color);
     background: var(--not-yellow);
 }
+
+.circle__small {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    color: var(--natural);
+    background: var(--primary-color);
+}

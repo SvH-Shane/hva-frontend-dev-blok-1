@@ -376,17 +376,35 @@ footer li {
     color: var(--second-color);
 }
 
-.footer__second--socials a {
-
-}
 
 .footer__cta--item:last-child {
     border-top: 1px solid var(--light-grey);
 }
 
 .footer__second {
-    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 0;
+    border-top: 1px solid var(--light-grey);
     order: 3;
+}
+
+.footer__second--socials {
+    display: flex;
+    justify-content: center;
+    margin-top: .7rem;
+}
+
+.footer__second a {
+    align-self: center;
+}
+
+.footer__second--socials a {
+    margin: 11px;
+}
+
+.footer__second--socials a svg {
+    transform: scale(0.8);
 }
 
 .footer__second ol {
