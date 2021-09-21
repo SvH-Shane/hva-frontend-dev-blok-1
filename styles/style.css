@@ -208,6 +208,7 @@ header figcaption:first-of-type {
 .story-slider__wrapper {
     display: flex;
     flex-direction: row;
+    padding-right: 1rem;
     overflow: scroll;
 }
 
