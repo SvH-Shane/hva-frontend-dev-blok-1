@@ -251,7 +251,8 @@ header figcaption:first-of-type {
     width: 100%;
     object-fit: cover;
     height: 50%;
-    background: linear-gradient(0deg, rgba(34,34,34,1) 0%, rgba(0,212,255,0) 100%);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
     z-index: 5;
 }
 
