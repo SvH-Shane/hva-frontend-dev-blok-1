@@ -209,7 +209,9 @@ header figcaption:first-of-type {
     display: flex;
     flex-direction: row;
     padding-right: 1rem;
+    padding-bottom: 1rem;
     overflow: scroll;
+    clip-path: inset(0 0 10px 0);
 }
 
 .story-slider__wrapper figure img {
