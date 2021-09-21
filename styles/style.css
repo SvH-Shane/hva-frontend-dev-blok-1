@@ -208,7 +208,7 @@ header figcaption:first-of-type {
 .story-slider__wrapper {
     display: flex;
     flex-direction: row;
-    padding-right: 1rem;
+    padding-right: 2rem;
     padding-bottom: 1rem;
     overflow: scroll;
     clip-path: inset(0 0 10px 0);
@@ -329,7 +329,7 @@ footer {
 }
 
 .footer__main {
-    padding: 1rem 2rem;
+    padding: 0 2rem 1rem 2rem;
 }
 
 .footer__cta {
