@@ -18,3 +18,14 @@ mark {
     width: auto;
     background: var(--primary-color);
 }
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.802rem;
+    height: 2.802rem;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background: var(--not-yellow);
+}

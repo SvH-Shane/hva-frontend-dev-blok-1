@@ -320,6 +320,7 @@ aside section a span:last-child {
 
 footer {
     display: flex;
+    margin-top: 3rem;
     flex-direction: column-reverse;
 }
 
@@ -336,11 +337,27 @@ footer {
 }
 
 .footer__cta--item {
+    display: flex;
+    align-items: center;
     padding: 1rem 2rem;
 }
 
+.footer__cta--item p {
+    display: flex;
+    margin-left: 1rem;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+.footer__cta--item p span {
+    font-size: var(--f-small);
+    font-weight: 400;
+    color: var(--second-color);
+}
+
+
 .footer__cta--item:last-child {
-    border-top: 1px solid rgb(238, 238, 238);
+    border-top: 1px solid var(--light-grey);
 }
 
 footer h2 {
