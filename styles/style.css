@@ -328,16 +328,30 @@ aside section a span:last-child {
 footer {
     display: flex;
     margin-top: 3rem;
-    flex-direction: column-reverse;
+    flex-direction: column;
+}
+
+footer h2 {
+    margin: 1rem 0;
+    color: var(--primary-color);
+}
+
+footer li {
+    margin-bottom: 1rem;
+    line-height: 1.13;
+    font-weight: 500;
+    color: var(--second-color);
 }
 
 .footer__main {
+    order: 2;
     padding: 0 2rem 1rem 2rem;
 }
 
 .footer__cta {
     display: flex;
     flex-direction: column;
+    order: 1;
     width: 100%;
     border-top: 1px solid var(--light-grey);
     border-bottom: 1px solid var(--light-grey);
@@ -362,19 +376,26 @@ footer {
     color: var(--second-color);
 }
 
+.footer__second--socials a {
+
+}
 
 .footer__cta--item:last-child {
     border-top: 1px solid var(--light-grey);
 }
 
-footer h2 {
-    margin: 1rem 0;
-    color: var(--primary-color);
+.footer__second {
+    padding: 1.5rem 0;
+    order: 3;
 }
 
-footer li {
-    margin-bottom: 1rem;
-    line-height: 1.13;
-    font-weight: 500;
-    color: var(--second-color);
+.footer__second ol {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.57rem 2rem;
+    margin-top: 1rem;
+    font-weight: 300;
+    border-top: 1px solid rgb(238, 238, 238);
 }
