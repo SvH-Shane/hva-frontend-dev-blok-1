@@ -232,11 +232,13 @@ hier screenshot(s) van je eindresultaat
 <details open>
 <summary>continu bijhouden terwijl je werkt</summary>
 
-Nb. Wees specifiek ('css-tricks' als bron is niet specifiek genoeg).
+1. Google Snap: https://developers.google.com/web/updates/2018/07/css-scroll-snap
 
-1. bron 1
-2. bron 2
-3. ...
+2. Google Snap Sourch: https://glitch.com/edit/#!/snap?path=carousel.html%3A1%3A0
+
+3. Hide the IOS scrollbar: https://stackoverflow.com/questions/38437613/css-overflow-scrolling-and-hidden-scrollbar-ios
+
+4. ...
 
 </details>
 
