@@ -238,7 +238,8 @@ hier screenshot(s) van je eindresultaat
 
 3. Hide the IOS scrollbar: https://stackoverflow.com/questions/38437613/css-overflow-scrolling-and-hidden-scrollbar-ios
 
-4. ...
+4. Button click
+https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
 
 </details>
 
