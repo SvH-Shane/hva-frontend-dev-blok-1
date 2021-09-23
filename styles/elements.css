@@ -41,6 +41,16 @@ mark {
     background: var(--primary-color);
 }
 
+.article time {
+    margin-left: 10px;
+    color: var(--usefull-color);
+}
+
+.article em {
+    margin-left: 10px;
+    color: var(--usefull-color);
+}
+
 .large-image {
     position: relative;
     width: inherit;

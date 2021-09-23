@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Shane van Hattum, duckdev.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NOS.nl - Nieuws, Sport en Evenementen op Radio, TV en Internet</title>
+	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/font-style.css" rel="stylesheet">
+	<link href="styles/variables.css" rel="stylesheet">
+	<link href="styles/elements.css" rel="stylesheet">
+	<link rel="icon" type="image/svg+xml" href="images/favicon.png">
+
+	<!-- Welkom bij het meesterwerk van de nieuwe Geert jan-jansen. Enjoy. -->
+</head>
+
+<body>
+	<nav>
+		<ol>
+			<li>
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" width="79" height="28" viewBox="0 0 79 28"><g fill="none" fill-rule="evenodd"><path fill="#949494" d="M78.94 18.93c0-5.31-2.57-6.91-9.32-8.54-3.46-.8-4.41-1.27-4.41-2.28 0-.96.53-1.66 2.76-1.66 2.72 0 5.1.93 7.48 2.55 0 0 3.15-5.01 3.49-5.87C76.2 1.12 72.92 0 68.35 0c-6.48 0-10.58 3.44-10.58 8.54 0 5.4 3.1 7.19 9.58 8.7 3.6.84 4.57 1.46 4.57 2.47 0 1.27-.85 1.74-3.5 1.74-2.49 0-5.9-1.36-7.85-2.71l-3.6 5.87a21.29 21.29 0 0011.3 3.29c6.45 0 10.67-2.33 10.67-8.73"></path><path fill="#E61E14" d="M27 13.95C27 6.25 33.32 0 41.12 0c7.8 0 14.13 6.25 14.13 13.95S48.92 27.9 41.12 27.9C33.32 27.9 27 21.65 27 13.95m7.2 0c0-3.78 3.1-6.84 6.92-6.84 3.83 0 6.93 3.06 6.93 6.84s-3.1 6.84-6.93 6.84a6.89 6.89 0 01-6.93-6.84"></path><path fill="#949494" d="M23.67 27.9V0h-7.33v14.35S6.88 0 6.82 0H.36v27.9h7.32V13.55l9.63 14.35h6.36z"></path></g></svg>
+				</a>
+			</li>
+			<li>
+				<button class="button active" onClick="mobMenuWorker(this)">
+					Nieuws
+					<svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" class="zxqdfp-2 gDQHvk"><path d="M4.179 4.865a.45.45 0 00.606.034l.037-.034 3.045-3.08a.464.464 0 000-.65.45.45 0 00-.606-.034l-.037.034L4.5 3.89 1.776 1.135A.45.45 0 001.17 1.1l-.037.034a.464.464 0 00-.033.613l.033.037 3.046 3.08z" fill="currentColor"></path></svg>
+				</button>
+				<ol class="dropdown">
+					<li class="dropdown__item">
+						<a href="#">Voorpagina</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Laatste nieuws</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Video's</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Binnenland</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Buitenland</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Regionaal Nieuws</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Politiek</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Economie</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Koningshuis</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Tech</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Cultuur & Media</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Opmerkelijk</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Archief</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<button class="button" onClick="mobMenuWorker(this)">
+					Sport
+					<svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" class="zxqdfp-2 gDQHvk"><path d="M4.179 4.865a.45.45 0 00.606.034l.037-.034 3.045-3.08a.464.464 0 000-.65.45.45 0 00-.606-.034l-.037.034L4.5 3.89 1.776 1.135A.45.45 0 001.17 1.1l-.037.034a.464.464 0 00-.033.613l.033.037 3.046 3.08z" fill="currentColor"></path></svg>
+				</button>
+				<ol class="dropdown sport">
+					<li class="dropdown__item">
+						<a href="#">Voorpagina</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Video's</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Voetbal</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Formule 1</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Wielrennen</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Schaatsen</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Tennis</a>
+					</li>
+					<li class="dropdown__item">
+						<a href="#">Archief</a>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<ol>
+			<li>
+				<button>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zxqdfp-1 XLxAL"><path d="M3.13 8.87a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm8.87 0a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm8.87 0a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm-17.74 1.8a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66zm8.87 0a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66zm8.87 0a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66z" fill="currentColor"></path></svg>
+				</button>
+			</li>
+			<li>
+				<a href="#">
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zxqdfp-0 eNKnUu"><path d="M10.04 0a10.04 10.04 0 017.7 16.47l6 6a.9.9 0 01-1.2 1.33l-.08-.06-5.99-5.99A10.04 10.04 0 1110.04 0zm0 1.8a8.24 8.24 0 100 16.48 8.24 8.24 0 000-16.48z" fill="currentColor"></path></svg>
+				</a>
+			</li>
+		</ol>
+	</nav>
+	<header>
+		<img src="assets/images/2880x2160a.jpeg" alt="IJzersterke Van Dijk" width="100%">
+	</header>
+	<main class="article">
+		<section>
+			<div>
+				<span>NOS Wielrennen</span><em>•</em><time datetime="2021-09-21T17:11:21+0200"> dinsdag, 17:11</time>
+			</div>
+			<h1>Philipsen volgt ploegmaat Van der Poel op als winnaar 'voorproefje Roubaix'</h1>
+		</section>
+		<section>
+			<p>
+				<a href="https://twitter.com/GPDenainPDH/status/1440320627139694594" target="_blank" rel="noopener noreferrer" class="tweet_2kE93fHm"><header class="header_3-ZkVVol"><div class="avatar_1jvAJNki"><img src="https://pbs.twimg.com/profile_images/1104789792250834947/9rKnGsQF_normal.jpg" alt="profielfoto" class="avatarImage_2rMNPAds"></div> <div class="headerContent_7AhdFmOG"><span class="name_PaEFvHmR">
+            Grand Prix Denain
+            <!----></span> <span class="screenName_2XoMAoUS">@GPDenainPDH</span></div> <span><svg width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="logoImage_cTen6S3k"><g id="Icons/social/twitter" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path id="Mask" d="M0,18.9609375 C0.355331726,18.9984377 0.751266853,19.0171875 1.18781726,19.0171875 C3.47209264,19.0171875 5.50760528,18.370319 7.29441624,17.0765625 C6.22842107,17.0578124 5.27411589,16.7554717 4.43147208,16.1695312 C3.58882827,15.5835908 3.01015386,14.835942 2.69543147,13.9265625 C3.03045853,13.9734377 3.3401001,13.996875 3.62436548,13.996875 C4.06091589,13.996875 4.49238365,13.945313 4.91878173,13.8421875 C3.7817202,13.6265614 2.84010525,13.1039104 2.09390863,12.2742188 C1.34771201,11.4445271 0.974619289,10.4812555 0.974619289,9.384375 L0.974619289,9.328125 C1.66497807,9.68437678 2.40608741,9.87656236 3.19796954,9.9046875 C2.52791543,9.49218544 1.99492584,8.95312833 1.59898477,8.2875 C1.20304371,7.62187167 1.00507614,6.90000389 1.00507614,6.121875 C1.00507614,5.29687088 1.22842416,4.53281602 1.6751269,3.8296875 C2.90355944,5.22656948 4.39846835,6.34452705 6.15989848,7.18359375 C7.9213286,8.02266045 9.80709655,8.48906203 11.8172589,8.5828125 C11.7360402,8.22656072 11.6954315,7.87968919 11.6954315,7.5421875 C11.6954315,6.28593122 12.1751221,5.21484818 13.1345178,4.32890625 C14.0939134,3.44296432 15.2538003,3 16.6142132,3 C18.0355401,3 19.2334977,3.47812022 20.2081218,4.434375 C21.3147263,4.23749902 22.3553251,3.87187767 23.3299492,3.3375 C22.9543128,4.41563039 22.2335079,5.24999705 21.1675127,5.840625 C22.1116798,5.74687453 23.0558328,5.51250187 24,5.1375 C23.3197936,6.05625459 22.4974668,6.83905927 21.5329949,7.4859375 C21.5431473,7.61718816 21.5482234,7.81406119 21.5482234,8.0765625 C21.5482234,9.29531859 21.3553319,10.5117127 20.9695431,11.7257812 C20.5837544,12.9398498 19.9974659,14.1046819 19.2106599,15.2203125 C18.4238539,16.3359431 17.4873151,17.322652 16.4010152,18.1804688 C15.3147154,19.0382855 14.0050838,19.7226537 12.4720812,20.2335938 C10.9390786,20.7445338 9.29950112,21 7.55329949,21 C4.8020167,21 2.28427538,20.3203193 0,18.9609375 Z" fill="currentColor" fill-rule="nonzero"></path></g></svg></span></header> <div class="imageWrapper_1sk95M54"><span class="playButton_3skJK6Zl"><svg width="22" height="22" xmlns="http://www.w3.org/2000/svg" class="playButtonIcon_3spHwxyi"><g fill-rule="nonzero" fill="none"><circle fill="#1DA1F2" cx="11" cy="11" r="10"></circle> <path d="M15.036 10.58l-6-3.82a.5.5 0 0 0-.77.42v7.64a.498.498 0 0 0 .77.419l6-3.817c.145-.092.23-.25.23-.422s-.085-.33-.23-.42z" fill="#FFF"></path> <path d="M11 21.75C5.072 21.75.25 16.928.25 11S5.072.25 11 .25 21.75 5.072 21.75 11 16.928 21.75 11 21.75zm0-20C5.9 1.75 1.75 5.9 1.75 11S5.9 20.25 11 20.25s9.25-4.15 9.25-9.25S16.1 1.75 11 1.75z" fill="#FFF"></path></g></svg></span> <img src="https://pbs.twimg.com/ext_tw_video_thumb/1440320558684459018/pu/img/3GKsvtoW6_cPA6di.jpg:medium" alt="" class="image_1ZbyueuB"></div> <p class="text_SxauwHAa">JASPER PHILIPSEN 🍾🥇🏆
+#Denain #GPDenain</p> <time datetime="2021-09-21T14:22:52+0000" class="footer_1WCEmECP">2 dagen geleden</time></a>
+			</p>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__main">
+			<h2>NOS informatie</h2>
+			<ol class="footer__main--list">
+				<li>
+					<a href="#">
+						Over de NOS
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Werken bij de NOS
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Contact
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Journalistieke verantwoording
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Herstelrubriek
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Ombudsman NPO
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						NOS Apps
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Voorwaarden
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Privacy
+					</a>
+				</li>
+			</ol>
+		</div>
+		<div class="footer__second">
+			<a href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="79" height="28" viewBox="0 0 79 28" aria-label="Link naar de homepage"><g fill="none" fill-rule="evenodd"><path fill="#949494" d="M78.94 18.93c0-5.31-2.57-6.91-9.32-8.54-3.46-.8-4.41-1.27-4.41-2.28 0-.96.53-1.66 2.76-1.66 2.72 0 5.1.93 7.48 2.55 0 0 3.15-5.01 3.49-5.87C76.2 1.12 72.92 0 68.35 0c-6.48 0-10.58 3.44-10.58 8.54 0 5.4 3.1 7.19 9.58 8.7 3.6.84 4.57 1.46 4.57 2.47 0 1.27-.85 1.74-3.5 1.74-2.49 0-5.9-1.36-7.85-2.71l-3.6 5.87a21.29 21.29 0 0011.3 3.29c6.45 0 10.67-2.33 10.67-8.73"></path><path fill="#E61E14" d="M27 13.95C27 6.25 33.32 0 41.12 0c7.8 0 14.13 6.25 14.13 13.95S48.92 27.9 41.12 27.9C33.32 27.9 27 21.65 27 13.95m7.2 0c0-3.78 3.1-6.84 6.92-6.84 3.83 0 6.93 3.06 6.93 6.84s-3.1 6.84-6.93 6.84a6.89 6.89 0 01-6.93-6.84"></path><path fill="#949494" d="M23.67 27.9V0h-7.33v14.35S6.88 0 6.82 0H.36v27.9h7.32V13.55l9.63 14.35h6.36z"></path></g></svg>
+			</a>
+			<div class="footer__second--socials">
+				<a href="#" class="circle__small">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M0 18.96c.355.038.751.057 1.188.057 2.284 0 4.32-.647 6.106-1.94-1.066-.02-2.02-.322-2.863-.907-.842-.586-1.42-1.334-1.736-2.243.335.046.645.07.93.07.436 0 .867-.052 1.294-.155-1.137-.215-2.079-.738-2.825-1.568-.746-.83-1.12-1.793-1.12-2.89v-.056a5.197 5.197 0 002.224.577 4.703 4.703 0 01-1.599-1.617 4.163 4.163 0 01-.594-2.166c0-.825.223-1.59.67-2.292C2.904 5.227 4.398 6.345 6.16 7.184a14.603 14.603 0 005.657 1.399 4.685 4.685 0 01-.122-1.04c0-1.257.48-2.328 1.44-3.214C14.094 3.443 15.254 3 16.615 3c1.42 0 2.618.478 3.593 1.434a10.133 10.133 0 003.122-1.097c-.376 1.079-1.096 1.913-2.162 2.504A10.42 10.42 0 0024 5.137a9.902 9.902 0 01-2.467 2.349 12.012 12.012 0 01-.563 4.24 12.742 12.742 0 01-1.76 3.494 14.095 14.095 0 01-2.809 2.96c-1.086.858-2.396 1.543-3.929 2.054-1.533.51-3.172.766-4.919.766-2.751 0-5.269-.68-7.553-2.04z" fill="currentColor"></path></svg>
+				</a>
+				<a href="#" class="circle__small">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M6 13.053v-4.27h3.542V5.64c0-1.788.481-3.175 1.444-4.16C11.95.492 13.231 0 14.833 0 16.194 0 17.25.058 18 .173v3.808h-2.18c-.797 0-1.334.173-1.612.519-.277.346-.416.865-.416 1.558v2.726h4.07l-.543 4.269h-3.527V24h-4.25V13.053H6z" fill="currentColor"></path></svg>
+				</a>
+				<a href="#" class="circle__small">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M18.704 6.82a1.33 1.33 0 110-2.66 1.33 1.33 0 010 2.66M12 18.063A6.07 6.07 0 015.937 12 6.07 6.07 0 0112 5.936 6.071 6.071 0 0118.064 12 6.07 6.07 0 0112 18.063M18.3 0H5.7A5.706 5.706 0 000 5.7v12.6C0 21.443 2.557 24 5.7 24h12.6c3.143 0 5.7-2.557 5.7-5.7V5.7C24 2.557 21.443 0 18.3 0M12 7.736A4.27 4.27 0 007.737 12 4.268 4.268 0 0012 16.264 4.269 4.269 0 0016.263 12 4.268 4.268 0 0012 7.737" fill="currentColor"></path></svg>
+				</a>
+				<a href="#" class="circle__small">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M16.249 12.484l-6.855 3.787c-.485.269-1.07-.097-1.07-.67V8.399c0-.558.56-.926 1.043-.685l6.854 3.416c.54.268.556 1.062.028 1.354M22.08 2.478s-2.152-.513-10.093-.476c-8.779.04-10.067.476-10.067.476C.86 2.478 0 3.331 0 4.382V19.62c0 1.05.86 1.904 1.92 1.904 0 0 2.565.481 10.067.476 7.862-.005 10.093-.476 10.093-.476 1.06 0 1.92-.853 1.92-1.904V4.382c0-1.051-.86-1.904-1.92-1.904" fill="currentColor"></path></svg>
+				</a>
+			</div>
+			<ol>
+				<li>
+					&copy; NOS 2021
+				</li>
+				<li>
+					<a href="#">Cookie-instellingen</a>
+				</li>
+			</ol>
+		</div>
+	</footer>
+	<script src="scripts/script.js"></script>
+</body>
+</html>

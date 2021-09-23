@@ -131,7 +131,7 @@
 
 /* Letterkast */
 h1 {
-    color: var(--main-color);
+    color: var(--darker-color);
 }
 
 h2 {
