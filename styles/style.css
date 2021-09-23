@@ -88,6 +88,7 @@ nav ol:last-child li:last-child::before {
     box-shadow: rgb(0 0 0 / 15%) 0px 0.25rem 0.625rem 0px;
     background: var(--natural);
     color: var(--main-color);
+    opacity: 0;
     transition: opacity 100ms ease-in-out 0s, margin-top 300ms ease-in-out 0s;
 }
 
@@ -95,8 +96,8 @@ nav ol:last-child li:last-child::before {
     opacity: 0;
 }
 
-.sport {
-    opacity: 0;
+.open {
+    opacity: 1;
 }
 
 .open-nieuws {
