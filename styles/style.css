@@ -92,22 +92,8 @@ nav ol:last-child li:last-child::before {
     transition: opacity 100ms ease-in-out 0s, margin-top 300ms ease-in-out 0s;
 }
 
-.nieuws {
-    opacity: 0;
-}
-
 .open {
     opacity: 1;
-}
-
-.open-nieuws {
-    opacity: 1;
-    transition: opacity 100ms ease-in-out 0s, margin-top 300ms ease-in-out 0s;
-}
-
-.open-sport {
-    opacity: 1;
-    transition: opacity 100ms ease-in-out 0s, margin-top 300ms ease-in-out 0s;
 }
 
 /* dropdown list */
