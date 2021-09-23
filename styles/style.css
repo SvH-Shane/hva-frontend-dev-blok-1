@@ -213,6 +213,17 @@ header figcaption:first-of-type {
     text-transform: uppercase;
 }
 
+.article__titel {
+    margin-bottom: 1.5rem;
+}
+
+.article__story p {
+    margin-bottom: 1.5rem;
+    font-size: 1em;
+    line-height: 1.7;
+    color: var(--darker-color);
+}
+
 .stories {
     display: flex;
     align-items: center;
