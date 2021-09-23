@@ -148,6 +148,10 @@ header {
     margin-top:4.4em;
 }
 
+header h2 {
+    font-size: 22px;
+}
+
 header figure:first-of-type {
     position: relative;
     overflow: hidden;
@@ -196,8 +200,6 @@ header figcaption:first-of-type {
     font-family: "HelveticaNeue";
     font-size: 14px;
 }
-
-
 
 .stories {
     display: flex;
