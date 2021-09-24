@@ -287,6 +287,15 @@ header figcaption:first-of-type {
     color: var(--darker-color);
 }
 
+.article__story h2 {
+    font-family: "HelveticaNeue";
+    margin-bottom: .5rem;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--darker-color);
+}
+
+
 .stories {
     display: flex;
     align-items: center;
