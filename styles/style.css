@@ -295,6 +295,39 @@ header figcaption:first-of-type {
     color: var(--darker-color);
 }
 
+.discover-more {
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-more h3 {
+    margin-top: .17em;
+    margin-bottom: 1.11em;
+    font-size: .78em;
+    font-weight: 700;
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.discover-more figure {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.discover-more figure img {
+    min-width: 80px;
+    height: 45px;
+    width: 80px;
+}
+
+.discover-more figure figcaption {
+    font-size: .8em;
+    line-height: 1.4;
+    font-weight: 500;
+    padding: .5rem .5rem .5rem 1rem;
+    color: var(--darker-color);
+}
 
 .stories {
     display: flex;
