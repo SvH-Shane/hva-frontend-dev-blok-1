@@ -109,10 +109,13 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ## Voortgang 2 (week 3)
 
 <details>
-<summary>uitwerken voor 2e voortgang</summary>
+<summary>
+Ik was even de kwijt weg met de footer. Ik heb omdat ik even 'code blind' was de elementen aangeroepen met classes
+
+</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+De feedback die ik heb gekregen, was om inderdaad de footer aan te passen en de inline javascript.... niet meer te doen!
 
 
 ### Agenda voor meeting
@@ -244,6 +247,9 @@ https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javasc
 5. https://stackoverflow.com/questions/42333757/multiple-dropdown-menus-using-same-js-code
 
 6. https://nos.nl/artikel/2398695-philipsen-volgt-ploegmaat-van-der-poel-op-als-winnaar-voorproefje-roubaix
+
+7. Mag je een article in een section gebruiken?
+https://dev.to/crasheddummy/comment/9jij
 
 </details>
 

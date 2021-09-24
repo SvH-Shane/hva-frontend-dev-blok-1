@@ -89,10 +89,12 @@ nav ol:last-child li:last-child::before {
     background: var(--natural);
     color: var(--main-color);
     opacity: 0;
+    display: none;
     transition: opacity 100ms ease-in-out 0s, margin-top 300ms ease-in-out 0s;
 }
 
 .open {
+    display: block;
     opacity: 1;
 }
 
@@ -205,7 +207,7 @@ header figcaption:first-of-type {
     padding: 1rem;
 }
 
-.article section div {
+.article section > div {
     margin-top: .5rem;
     margin-bottom: 1.33rem;
     font-size: 11px;
@@ -222,10 +224,66 @@ header figcaption:first-of-type {
     color: var(--darker-color);
 }
 
+.article__story article {
+    border: 1px solid var(--usefull-extra-line-color);
+    margin-bottom: 1.4em;
+    border-radius: 0 0 5px 5px;
+}
+
+.article__story article header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 0;
+}
+
+.article__story article svg {
+    color: #1da1f2; //twitter kleurtje, niks van NOS bij.
+}
+
+.article__story article header div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding-left: .625em;
+    font-size: .875em;
+    line-height: 1.5;
+    letter-spacing: -.0125em;
+}
+
+.article__story article figure img {
+    width: 100%;
+}
+
+.article__story article figure figcaption {
+    padding: .5rem 1rem;
+    line-height: 1.44;
+    font-weight: 300;
+    color: var(--darker-color);
+}
+
+.article__story article figure time {
+    display: block;
+    padding: 0 .9375em .625em;
+    text-align: right;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #333;
+}
+
+.article__story article header div span:first-child {
+    font-weight: 700;
+}
+
+.article__story article header div span:last-child {
+    color: var(--usefull-color);
+}
+
 .article__story p {
     margin-bottom: 1.5rem;
-    font-size: 1em;
     line-height: 1.7;
+    font-weight: 300;
     color: var(--darker-color);
 }
 
