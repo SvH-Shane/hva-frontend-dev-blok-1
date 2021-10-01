@@ -105,3 +105,13 @@ mark {
 .large-image figure figcaption h2 {
     font-size: 22px;
 }
+
+@media only screen and (max-width: 759px) {
+    .mob-on {
+        display: none;
+    }
+
+    .mob-off {
+        display: inherit;
+    }
+}

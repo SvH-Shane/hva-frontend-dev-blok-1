@@ -45,6 +45,11 @@ nav {
     z-index: 99;
 }
 
+@media only screen and (min-width: 760px) {
+    nav {
+    }
+}
+
 nav ol {
     position: relative;
     display: flex;
@@ -183,6 +188,39 @@ header figcaption:first-of-type {
     padding: 1rem 1rem 0 1rem ;
     bottom: 1em;
     z-index: 22;
+}
+
+@media only screen and (min-width: 760px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 1rem;
+        margin-top: 5.5rem;
+    }
+
+    header figure:first-of-type::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 99%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, .7));
+        z-index: 2;
+    }
+
+    header a figure {
+        display: block;
+        width: 100%;
+    }
+
+    header figcaption:first-of-type {
+        position: absolute;
+        line-height: 1.11;
+        padding: 1rem 1rem 0 1rem ;
+        bottom: 1em;
+        z-index: 22;
+    }
 }
 
 .header-articles {
