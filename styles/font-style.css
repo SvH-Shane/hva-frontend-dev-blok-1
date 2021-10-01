@@ -115,7 +115,7 @@
 
 @font-face {
     font-family: 'Helvetica Neue';
-    src: url('HelveticaNeue.woff') format('woff');
+    src: url('../assets/fonts/HelveticaNeue.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;

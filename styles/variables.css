@@ -25,3 +25,9 @@
     --f-normal: 16px;
     --f-small: 14px;
 }
+
+@media (prefers-color-scheme:dark) {
+    :root:not(.lightMode) {
+        --natural: #222222;
+    }
+}

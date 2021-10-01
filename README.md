@@ -150,28 +150,14 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 ### Bevindingen
 Lijst met je bevindingen die in de test naar voren kwamen:
 
-#### Titel eerste bevinding
-Hier korte omschrijving (met indien nodig een afbeelding)
+#### Footer draait zicht om
+Doordat de elementen in de css op andere order staat, slaat de screenreader dit over en gaat er op het eind van de footer pas naar toe.
 
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
+Ik ga dit verhelpen met de tabindex
 
+#### Werken met een slechte moteriek
+Toen ik testte met een slechte moteriek, merkte ik dat ik direct overging op de TAB toetsen. En dan werkt de site wel fijn.
 
-#### Titel tweede bevinding.
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel volgende bevinding.
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
-
-
-#### Titel nog een bevinding.
-Hier korte omschrijving (met indien nodig een afbeelding)
-
-Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbeelding)
 
 </details>
 
@@ -250,6 +236,10 @@ https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javasc
 
 7. Mag je een article in een section gebruiken?
 https://dev.to/crasheddummy/comment/9jij
+
+8. https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/tabindex
+
+9. https://stackoverflow.com/questions/4503901/javascript-if-time-930-then
 
 </details>
 
