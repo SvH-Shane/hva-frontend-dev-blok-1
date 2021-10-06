@@ -230,7 +230,7 @@ header figcaption:first-of-type {
     letter-spacing: normal;
 }
 
-.header-articles:nth-child(n+3){
+.header-articles:nth-child(n+4){
     display: none;
 }
 
