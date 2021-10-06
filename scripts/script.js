@@ -5,21 +5,30 @@ var buttonNieuws = document.querySelector(".button-nieuws ");
 var buttonSport = document.querySelector(".button-sport");
 var nieuws = document.querySelector(".nieuws");
 var sport = document.querySelector(".sport");
-var navNieuwsMenu = document.getElementsByClassName('open-nieuws');
 
 buttonNieuws.addEventListener("click", function() {
-  nieuws.classList.toggle("open-nieuws");
+    if (sport.classList.contains("open")) {
+        sport.classList.remove("open");
+        nieuws.classList.add("open");
+    } else if (nieuws.classList.contains("open")) {
+        nieuws.classList.remove("open");
+    } else {
+        nieuws.classList.add("open");
+    };
 });
 
-buttonNieuws.addEventListener("click", function(){
-	console.log('Er is op mij gedrukt!');
+buttonSport.addEventListener("click", function() {
+    if (nieuws.classList.contains("open")) {
+        nieuws.classList.remove("open");
+        sport.classList.add("open");
+    } else if (sport.classList.contains("open")) {
+        sport.classList.remove("open");
+    } else {
+        sport.classList.add("open");
+    };
 });
 
-if (navNieuwsMenu.length > 0) {
-	console.log('Er is al iets open');
-} else {
-	console.log('Het kan! het mag hij mag open!');
-}
+
 
 
 

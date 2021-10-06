@@ -19,6 +19,15 @@ mark {
     background: var(--primary-color);
 }
 
+a:hover {
+    transition: .1s;
+    color: var(--primary-color);
+}
+
+a {
+    transition: .1s;
+}
+
 .circle {
     display: flex;
     justify-content: center;
@@ -112,6 +121,6 @@ mark {
     }
 
     .mob-off {
-        display: inherit;
+        display: block;
     }
 }

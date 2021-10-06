@@ -21,6 +21,7 @@
     --margin-s: .67em;
 
 /* Letterkast formaat */
+    --f-d-large: 28px;
     --f-large: 18px;
     --f-normal: 16px;
     --f-small: 14px;

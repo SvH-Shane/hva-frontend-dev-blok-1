@@ -178,6 +178,11 @@ hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je we
 
 - punt 1
 - punt 2
+cursor
+
+kijkt op element, kijkt of class exist contains class
+
+add open nieuws remove
 - nog een punt
 - ...
 

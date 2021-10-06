@@ -6,115 +6,134 @@
 	<meta name="author" content="Shane van Hattum, duckdev.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>NOS.nl - Nieuws, Sport en Evenementen op Radio, TV en Internet</title>
+
+	<!-- Stylig docs -->
 	<link href="styles/style.css" rel="stylesheet">
+	<link href="styles/style-small.css" rel="stylesheet">
+	<link href="styles/style-large.css" rel="stylesheet">
+
+	<!-- Styling attributes -->
 	<link href="styles/font-style.css" rel="stylesheet">
 	<link href="styles/variables.css" rel="stylesheet">
 	<link href="styles/elements.css" rel="stylesheet">
+
+	<!-- Rest linking -->
 	<link rel="icon" type="image/svg+xml" href="images/favicon.png">
 </head>
 
 <body>
+	<div id="box" class="active"></div>
+
 	<nav>
-		<ol>
-			<li>
-				<a href="index.html">
-					<svg alt="test" xmlns="http://www.w3.org/2000/svg" width="79" height="28" viewBox="0 0 79 28"><g fill="none" fill-rule="evenodd"><path fill="#949494" d="M78.94 18.93c0-5.31-2.57-6.91-9.32-8.54-3.46-.8-4.41-1.27-4.41-2.28 0-.96.53-1.66 2.76-1.66 2.72 0 5.1.93 7.48 2.55 0 0 3.15-5.01 3.49-5.87C76.2 1.12 72.92 0 68.35 0c-6.48 0-10.58 3.44-10.58 8.54 0 5.4 3.1 7.19 9.58 8.7 3.6.84 4.57 1.46 4.57 2.47 0 1.27-.85 1.74-3.5 1.74-2.49 0-5.9-1.36-7.85-2.71l-3.6 5.87a21.29 21.29 0 0011.3 3.29c6.45 0 10.67-2.33 10.67-8.73"></path><path fill="#E61E14" d="M27 13.95C27 6.25 33.32 0 41.12 0c7.8 0 14.13 6.25 14.13 13.95S48.92 27.9 41.12 27.9C33.32 27.9 27 21.65 27 13.95m7.2 0c0-3.78 3.1-6.84 6.92-6.84 3.83 0 6.93 3.06 6.93 6.84s-3.1 6.84-6.93 6.84a6.89 6.89 0 01-6.93-6.84"></path><path fill="#949494" d="M23.67 27.9V0h-7.33v14.35S6.88 0 6.82 0H.36v27.9h7.32V13.55l9.63 14.35h6.36z"></path></g></svg>
-				</a>
-			</li>
-			<li>
-				<a href="#" class="button-nieuws">
-					<button class="button active" id="btn-nav-nieuws">
-						Nieuws
-						<svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" class="zxqdfp-2 gDQHvk"><path d="M4.179 4.865a.45.45 0 00.606.034l.037-.034 3.045-3.08a.464.464 0 000-.65.45.45 0 00-.606-.034l-.037.034L4.5 3.89 1.776 1.135A.45.45 0 001.17 1.1l-.037.034a.464.464 0 00-.033.613l.033.037 3.046 3.08z" fill="currentColor"></path></svg>
+		<section>
+			<ol>
+				<li>
+					<a href="index.html">
+						<svg alt="test" xmlns="http://www.w3.org/2000/svg" width="79" height="28" viewBox="0 0 79 28"><g fill="none" fill-rule="evenodd"><path fill="#949494" d="M78.94 18.93c0-5.31-2.57-6.91-9.32-8.54-3.46-.8-4.41-1.27-4.41-2.28 0-.96.53-1.66 2.76-1.66 2.72 0 5.1.93 7.48 2.55 0 0 3.15-5.01 3.49-5.87C76.2 1.12 72.92 0 68.35 0c-6.48 0-10.58 3.44-10.58 8.54 0 5.4 3.1 7.19 9.58 8.7 3.6.84 4.57 1.46 4.57 2.47 0 1.27-.85 1.74-3.5 1.74-2.49 0-5.9-1.36-7.85-2.71l-3.6 5.87a21.29 21.29 0 0011.3 3.29c6.45 0 10.67-2.33 10.67-8.73"></path><path fill="#E61E14" d="M27 13.95C27 6.25 33.32 0 41.12 0c7.8 0 14.13 6.25 14.13 13.95S48.92 27.9 41.12 27.9C33.32 27.9 27 21.65 27 13.95m7.2 0c0-3.78 3.1-6.84 6.92-6.84 3.83 0 6.93 3.06 6.93 6.84s-3.1 6.84-6.93 6.84a6.89 6.89 0 01-6.93-6.84"></path><path fill="#949494" d="M23.67 27.9V0h-7.33v14.35S6.88 0 6.82 0H.36v27.9h7.32V13.55l9.63 14.35h6.36z"></path></g></svg>
+					</a>
+				</li>
+				<li>
+					<a href="#" class="button-nieuws">
+						<button class="button active" id="btn-nav-nieuws">
+							Nieuws
+							<svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" class="zxqdfp-2 gDQHvk"><path d="M4.179 4.865a.45.45 0 00.606.034l.037-.034 3.045-3.08a.464.464 0 000-.65.45.45 0 00-.606-.034l-.037.034L4.5 3.89 1.776 1.135A.45.45 0 001.17 1.1l-.037.034a.464.464 0 00-.033.613l.033.037 3.046 3.08z" fill="currentColor"></path></svg>
+						</button>
+					</a>
+					<ol class="dropdown nieuws" id="drp-nieuws">
+						<li class="dropdown__item">
+							<a href="#">Voorpagina</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Laatste nieuws</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Video's</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Binnenland</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Buitenland</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Regionaal Nieuws</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Politiek</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Economie</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Koningshuis</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Tech</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Cultuur & Media</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Opmerkelijk</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Archief</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<a href="#" class="button-sport">
+						<button class="button" id="btn-nav-sport">
+							Sport
+							<svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" class="zxqdfp-2 gDQHvk"><path d="M4.179 4.865a.45.45 0 00.606.034l.037-.034 3.045-3.08a.464.464 0 000-.65.45.45 0 00-.606-.034l-.037.034L4.5 3.89 1.776 1.135A.45.45 0 001.17 1.1l-.037.034a.464.464 0 00-.033.613l.033.037 3.046 3.08z" fill="currentColor"></path></svg>
+						</button>
+					</a>
+					<ol class="dropdown sport">
+						<li class="dropdown__item">
+							<a href="#">Voorpagina</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Video's</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Voetbal</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Formule 1</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Wielrennen</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Schaatsen</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Tennis</a>
+						</li>
+						<li class="dropdown__item">
+							<a href="#">Archief</a>
+						</li>
+					</ol>
+				</li>
+				<li>
+					<button class="button mob-on">
+						<a href="article.html">Uitzendingen</a>
 					</button>
-				</a>
-				<ol class="dropdown nieuws" id="drp-nieuws">
-					<li class="dropdown__item">
-						<a href="#">Voorpagina</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Laatste nieuws</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Video's</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Binnenland</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Buitenland</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Regionaal Nieuws</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Politiek</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Economie</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Koningshuis</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Tech</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Cultuur & Media</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Opmerkelijk</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Archief</a>
-					</li>
-				</ol>
-			</li>
-			<li>
-				<button class="button" id="btn-nav-sport">
-					<a href="article.html">Sport</a>
-					<svg viewBox="0 0 9 6" xmlns="http://www.w3.org/2000/svg" class="zxqdfp-2 gDQHvk"><path d="M4.179 4.865a.45.45 0 00.606.034l.037-.034 3.045-3.08a.464.464 0 000-.65.45.45 0 00-.606-.034l-.037.034L4.5 3.89 1.776 1.135A.45.45 0 001.17 1.1l-.037.034a.464.464 0 00-.033.613l.033.037 3.046 3.08z" fill="currentColor"></path></svg>
-				</button>
-				<ol class="dropdown sport">
-					<li class="dropdown__item">
-						<a href="#">Voorpagina</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Video's</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Voetbal</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Formule 1</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Wielrennen</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Schaatsen</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Tennis</a>
-					</li>
-					<li class="dropdown__item">
-						<a href="#">Archief</a>
-					</li>
-				</ol>
-			</li>
-		</ol>
-		<ol>
-			<li>
-				<button>
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zxqdfp-1 XLxAL"><path d="M3.13 8.87a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm8.87 0a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm8.87 0a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm-17.74 1.8a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66zm8.87 0a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66zm8.87 0a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66z" fill="currentColor"></path></svg>
-				</button>
-			</li>
-			<li>
-				<a href="#">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zxqdfp-0 eNKnUu"><path d="M10.04 0a10.04 10.04 0 017.7 16.47l6 6a.9.9 0 01-1.2 1.33l-.08-.06-5.99-5.99A10.04 10.04 0 1110.04 0zm0 1.8a8.24 8.24 0 100 16.48 8.24 8.24 0 000-16.48z" fill="currentColor"></path></svg>
-				</a>
-			</li>
-		</ol>
+				</li>
+			</ol>
+			<ol>
+				<li>
+					<button>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zxqdfp-1 XLxAL"><path d="M3.13 8.87a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm8.87 0a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm8.87 0a3.13 3.13 0 110 6.26 3.13 3.13 0 010-6.26zm-17.74 1.8a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66zm8.87 0a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66zm8.87 0a1.33 1.33 0 100 2.66 1.33 1.33 0 000-2.66z" fill="currentColor"></path></svg>
+					</button>
+				</li>
+				<li>
+					<a href="#">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="zxqdfp-0 eNKnUu"><path d="M10.04 0a10.04 10.04 0 017.7 16.47l6 6a.9.9 0 01-1.2 1.33l-.08-.06-5.99-5.99A10.04 10.04 0 1110.04 0zm0 1.8a8.24 8.24 0 100 16.48 8.24 8.24 0 000-16.48z" fill="currentColor"></path></svg>
+					</a>
+				</li>
+			</ol>
+		</section>
 	</nav>
 	<header>
 		<a href="article.html">
@@ -137,30 +156,62 @@
 	<main>
 		<section>
 			<article class="header-articles">
-					<figure class="mob-on">
-						<a href="#">
-							<img src="assets/images/1920x1080a-winst.jpeg" alt="Van Aert toont topvorm opnieuw met derde dagzege in Groot-Brittannië">
-							<figcaption>
-								Slimme Italiaan Colbrelli wint Europese titel wielrennen op de weg
-							</figcaption>
-						</a>
-					</figure>
-					<figure>
-						<a href="#" class="mob-off">
-							<img src="assets/images/3840x2160a.jpeg" alt="Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden">
-							<figcaption>
-								Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden
-							</figcaption>
-						</a>
-					</figure>
-					<figure>
-						<a href="#" class="mob-off">
-							<img src="assets/images/3840x2160a.jpeg" alt="Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden">
-							<figcaption>
-								Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden
-							</figcaption>
-						</a>
-					</figure>
+				<figure class="mob-on">
+					<a href="#">
+						<img src="assets/images/3840x2160a.jpeg" alt="Van Aert toont topvorm opnieuw met derde dagzege in Groot-Brittannië">
+						<figcaption>
+							<h2>Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden</h2>
+							<span>Hij komt in de sprint tekort tegen Sonny Colbrelli en Florian Vermeersch. Toch heeft hij een mooie dag gehad. "Ik heb kunnen koersen zoals ik het liefste doe."</span>
+						</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="#" class="mob-off">
+						<img src="assets/images/1920x1080a-winst.jpeg" alt="Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden">
+						<figcaption>
+							<h2>Slimme Italiaan Colbrelli wint Europese titel wielrennen op de weg</h2>
+							<span>De 118de editie van Parijs-Roubaix is er eentje voor de geschiedenisboeken. Het was nat, het was vies en aan het einde wint de Italiaan Colbrelli. Van der Poel wordt derde</span>
+						</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="#" class="mob-off">
+						<img src="assets/images/3840x2160alpecin.jpeg" alt="Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden">
+						<figcaption>
+							<h2>Van Vleuten heeft 'heel veel spijt' van Parijs-Roubaix: 'Heb me laten verleiden'</h2>
+							<span>De Nederlander wordt bij zijn debuut in de kasseienklassieker derde, achter Sonny Colbrelli en Florian Vermeersch.</span>
+						</figcaption>
+					</a>
+				</figure>
+			</article>
+			<article class="header-articles mob-on">
+				<figure class="mob-on">
+					<a href="#">
+						<img src="assets/images/3840x2160a-canyon.jpeg" alt="Van Aert toont topvorm opnieuw met derde dagzege in Groot-Brittannië">
+						<figcaption>
+							<h2>Twee weken na opzienbarende Vuelta-opgave wordt contract 'bad boy' López ontbonden</h2>
+							<span>Hij komt in de sprint tekort tegen Sonny Colbrelli en Florian Vermeersch. Toch heeft hij een mooie dag gehad. "Ik heb kunnen koersen zoals ik het liefste doe."</span>
+						</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="#" class="mob-off">
+						<img src="assets/images/1920x1080a-belg.jpeg" alt="Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden">
+						<figcaption>
+							<h2>WK wielrennen bij de NOS: slaat Van Aert vandaag al toe op de tijdrit?</h2>
+							<span>De 118de editie van Parijs-Roubaix is er eentje voor de geschiedenisboeken. Het was nat, het was vies en aan het einde wint de Italiaan Colbrelli. Van der Poel wordt derde</span>
+						</figcaption>
+					</a>
+				</figure>
+				<figure>
+					<a href="#" class="mob-off">
+						<img src="assets/images/1920x1080a.jpeg" alt="Na Van der Poel, Dumoulin en Van Baarle zal ook Terpstra EK niet rijden">
+						<figcaption>
+							<h2>Stampen in Knokke, rammen in Damme: 'Tijdritparcours voor echte powerhouses'</h2>
+							<span>De Nederlander wordt bij zijn debuut in de kasseienklassieker derde, achter Sonny Colbrelli en Florian Vermeersch.</span>
+						</figcaption>
+					</a>
+				</figure>
 			</article>
 			<article class="stories">
 				<a href="#">
@@ -303,6 +354,69 @@
 			</a>
 		</section>
 		<aside>
+			<section class="mob-on">
+				<h2> Laatste nieuws </h2>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">21:54</time>
+						<p>Bos nieuwe voorzitter wielerbond KNWU: 'Niveau vasthouden of zelfs verbeteren'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">20:57</time>
+						<p>Ook kritiek na heroïsche koers, maar: 'Parijs-Roubaix overstijgt gezonde verstand'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Evenepoel dubbelt peloton in Coppa Bernocchi en is klaar voor Lombardije</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">16:38</time>
+						<p>Bastianelli sprint naar ritzege en pakt leiderstrui Ronde van Groot-Brittannië</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>De mooiste foto's van de mooiste editie van Parijs-Roubaix in jaren</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+					<a href="#" class="latest-news">
+						<time datetime="2021-10-05T11:57:51+0200">11:57</time>
+						<p>Trots overheerst bij Van der Poel na 'bizarre' Roubaix: 'Strijdend ten onder'</p>
+					</a>
+			</section>
 			<section>
 				<a href="#">
 					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60"><g fill="none" fill-rule="evenodd"><circle cx="30" cy="30" r="30" fill="#FF6E6E"></circle><path d="M24.674 42.545c.19 0 .36-.037.507-.11.148-.074.273-.175.375-.302.102-.126.178-.269.227-.427a1.645 1.645 0 000-.981 1.213 1.213 0 00-.227-.422 1.149 1.149 0 00-.375-.296c-.148-.074-.317-.11-.507-.11s-.361.036-.513.11a1.09 1.09 0 00-.375.296 1.36 1.36 0 00-.227.422 1.533 1.533 0 00-.079.49 1.504 1.504 0 00.306.918c.1.127.224.228.375.301.152.074.323.111.513.111m-2.664-1.33c0-.366.065-.708.196-1.029a2.494 2.494 0 011.384-1.403c.327-.137.688-.206 1.083-.206s.754.069 1.078.206a2.509 2.509 0 011.378 1.404c.13.32.196.662.196 1.029 0 .365-.065.708-.196 1.028-.13.32-.311.6-.544.84-.232.238-.51.428-.834.569-.324.14-.683.211-1.078.211s-.756-.07-1.083-.211a2.539 2.539 0 01-1.384-1.409 2.707 2.707 0 01-.196-1.028m7.736 1.171c.197.134.489.2.876.2.374 0 .668-.124.883-.374.214-.25.322-.582.322-.998 0-.161-.02-.32-.058-.475a1.252 1.252 0 00-.18-.406.913.913 0 00-.317-.28c-.13-.07-.29-.105-.48-.105a.98.98 0 00-.777.348 1.234 1.234 0 00-.27.771v1.319zm-1.511-3.641h1.458c.013.092.024.181.031.269l.022.269c.161-.204.37-.36.623-.47.253-.108.518-.163.792-.163.36 0 .677.07.951.211.275.14.504.33.687.565.183.235.32.506.412.812.092.306.137.621.137.945 0 .457-.077.855-.232 1.193a2.479 2.479 0 01-.602.833c-.247.218-.525.38-.835.486-.31.105-.616.158-.92.158-.239 0-.436-.021-.59-.064a7.566 7.566 0 01-.423-.126v2.142h-1.511v-7.06zm6.392 3.229c.218.19.442.336.67.438.23.102.481.153.756.153.324 0 .593-.088.808-.264.215-.175.323-.422.323-.738a.966.966 0 00-.249-.655c-.165-.19-.427-.285-.787-.285-.133 0-.259.013-.375.037a1.476 1.476 0 00-.27.08l-.39-.623 1.7-1.741h-2.482v-1.32h4.184v1.088l-1.384 1.561c.528.099.928.32 1.2.665.27.345.406.777.406 1.298 0 .352-.072.665-.217.94a2.094 2.094 0 01-.576.69c-.24.187-.516.33-.829.428-.313.099-.64.148-.977.148a3.72 3.72 0 01-1.326-.222 3.18 3.18 0 01-1.01-.601l.825-1.077zm12.346-12.862c0-2.277-1.107-2.963-4.012-3.658-1.485-.348-1.897-.547-1.897-.978 0-.413.23-.712 1.188-.712 1.172 0 2.195.398 3.219 1.093 0 0 1.359-2.15 1.502-2.517C45.8 21.481 44.381 21 42.417 21c-2.79 0-4.555 1.474-4.555 3.66 0 2.318 1.337 3.08 4.126 3.726 1.551.364 1.964.629 1.964 1.059 0 .547-.363.746-1.502.746-1.073 0-2.541-.58-3.383-1.16l-1.551 2.517c1.204.795 3.003 1.408 4.868 1.408 2.773 0 4.59-.996 4.59-3.743" fill="#FFF"></path><path fill="#E61E14" d="M24.619 26.978c0-3.302 2.721-5.978 6.079-5.978 3.357 0 6.08 2.676 6.08 5.978 0 3.302-2.723 5.978-6.08 5.978-3.358 0-6.08-2.676-6.08-5.978m3.098 0c0-1.62 1.335-2.933 2.982-2.933 1.647 0 2.982 1.314 2.982 2.933 0 1.62-1.335 2.933-2.982 2.933-1.647 0-2.982-1.313-2.982-2.933"></path><path fill="#FFF" d="M23.185 32.956V21h-3.151v6.149S15.961 21 15.935 21h-2.78v11.956h3.153v-6.149l4.142 6.15h2.736z"></path></g></svg>
@@ -391,7 +505,7 @@
 			</ol>
 		</div>
 		<div>
-			<a href="#" tabindex="1">
+			<a href="#">
 				<div class="circle">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M5.627 9.796C6.009 7.02 8.38 4.801 11.279 4.51c3.807-.383 7.082 2.468 7.082 6.108 0 1.161-.341 2.277-1.017 3.307a19.38 19.38 0 00-1.164 1.669c-.266.43-.496.846-.677 1.235-.16.342-.278.656-.35.932a1.82 1.82 0 01-1.543 1.346l-2.693.345c-.915.116-1.79-.435-2.014-1.296a5.932 5.932 0 00-.16-.512c-.21-.59-.525-1.23-.916-1.89a18.246 18.246 0 00-1.246-1.828.736.736 0 01-.096-.153 5.917 5.917 0 01-.858-3.976zm2.623 3.79c.319.443.637.923.935 1.426.435.736.79 1.456 1.036 2.144.077.216.143.427.197.634.029.112.155.192.293.174l2.693-.345c.109-.013.201-.096.234-.223.096-.37.245-.763.44-1.181.207-.446.464-.911.76-1.388a20.08 20.08 0 011.225-1.758c.48-.735.736-1.575.736-2.452 0-2.752-2.474-4.906-5.358-4.616-2.18.22-3.979 1.902-4.266 3.991-.15 1.1.1 2.166.693 3.077l.011.018c.091.116.218.285.371.498zm1.567 8.228c-.428.053-.82-.237-.875-.648-.055-.41.247-.787.674-.84l4.97-.617c.427-.053.819.237.874.648.055.41-.247.787-.674.84l-4.97.617zm0 2.18c-.428.053-.82-.237-.875-.648-.055-.41.247-.787.674-.84l4.97-.617c.427-.053.819.237.874.648.055.41-.247.787-.674.84l-4.97.617zm2.726-21.923c0 .414-.35.75-.78.75-.432 0-.782-.336-.782-.75V.75c0-.414.35-.75.781-.75.432 0 .781.336.781.75v1.321zm8.45 6.515c-.426.069-.829-.207-.9-.616-.072-.408.215-.795.64-.863l1.357-.219c.425-.068.828.207.9.616a.756.756 0 01-.642.864l-1.356.218zm-.981 5.879a.734.734 0 01-.286-1.025.798.798 0 011.066-.274l1.192.66a.734.734 0 01.286 1.024.799.799 0 01-1.067.275l-1.191-.66zM18.483 3.382a.798.798 0 01-1.066.274.733.733 0 01-.286-1.024l.687-1.144a.798.798 0 011.067-.275.734.734 0 01.286 1.025l-.688 1.144zM3.266 7.107c.426.068.713.455.641.863-.071.409-.474.685-.9.616l-1.355-.218a.754.754 0 01-.641-.864c.071-.409.474-.684.9-.616l1.355.219zm-.059 6.059a.8.8 0 011.067.274.734.734 0 01-.286 1.025l-1.191.66a.799.799 0 01-1.067-.275.734.734 0 01.286-1.024l1.191-.66zM6.87 2.632a.733.733 0 01-.286 1.024.798.798 0 01-1.066-.275L4.83 2.237a.734.734 0 01.287-1.024.798.798 0 011.066.275l.687 1.144z" fill="currentColor"></path></svg>
 				</div>
@@ -400,7 +514,7 @@
 					<span>Geef je tips aan ons door</span>
 				</p>
 			</a>
-			<a href="#" tabindex="1">
+			<a href="#">
 				<div class="circle">
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c6.627 0 12 5.373 12 12s-5.373 12-12 12S0 18.627 0 12 5.373 0 12 0zm0 1.801C6.367 1.801 1.801 6.367 1.801 12S6.367 22.199 12 22.199c5.632 0 10.199-4.567 10.199-10.199S17.632 1.801 12 1.801zm0 8.178a.9.9 0 01.9.9v5.513a.9.9 0 01-1.8 0V10.88a.9.9 0 01.9-.901zm0-3.272a.9.9 0 01.9.9v.446a.9.9 0 01-1.8 0v-.446a.9.9 0 01.9-.9z" fill="currentColor"></path></svg>
 				</div>

@@ -1,0 +1,102 @@
+@media only screen and (min-width: 760px) {
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 .5rem;
+        margin-bottom: 1rem;
+        margin-top: 7rem;
+    }
+
+    header a {
+        width: 100%;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+
+    header h2 {
+        font-size: var(--f-d-large);
+    }
+
+    header a:first-child {
+        margin-right: 1rem;
+    }
+
+    header a:last-child {
+        margin-left: 1rem;
+    }
+
+    header figure:first-of-type::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, .7));
+        z-index: 2;
+    }
+
+    header a figure {
+        display: block;
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+    }
+
+    header figcaption:first-of-type {
+        position: absolute;
+        line-height: 1.11;
+        padding: 1.5rem 1.5rem 1rem 1.5rem ;
+        bottom: 1em;
+        z-index: 22;
+    }
+
+    header a figure img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        transition: transform .5s;
+    }
+
+    header a figure img:hover {
+        transition: .5s;
+        transform: scale(1.1);
+    }
+
+    header a:first-child {
+        margin-right: 1.5rem;
+    }
+
+    .header-articles figure {
+        margin-right: 2rem;
+    }
+
+    .header-articles:nth-child(>2){
+        display: none;
+    }
+
+    .header-articles figure:last-child {
+        margin-right: 1rem;
+    }
+
+    .header-articles figure h2 {
+        font-family: 'Effra', 'Helvetica Neue';
+        font-size: 18px !important;
+        font-weight: 500;
+        letter-spacing: normal;
+    }
+
+    .header-articles figure span {
+        display: block;
+        line-height: 1.25rem;
+        font-weight: 100;
+        margin: .5rem 0;
+        font-size: var(--f-normal);
+        color: var(--second-color);
+    }
+
+    .stories {
+        display: none;
+    }
+}

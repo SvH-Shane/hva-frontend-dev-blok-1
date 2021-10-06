@@ -11,13 +11,13 @@
 input, button, submit {
     border:none;
     background: none;
+    cursor: pointer;
 }
 
 ul, li, ol {
     margin-left: 0 ;
     padding-left: 0;
 }
-
 
 /* Hier begint het leven */
 body {
@@ -28,6 +28,11 @@ body {
     font-style: normal;
     letter-spacing: .3px;
     line-height: 1.15;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* nav */
@@ -45,9 +50,12 @@ nav {
     z-index: 99;
 }
 
-@media only screen and (min-width: 760px) {
-    nav {
-    }
+nav section {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1165px;
 }
 
 nav ol {
@@ -158,6 +166,8 @@ nav button svg {
 /* Header */
 header {
     margin-top:4.4em;
+    max-width: 1200px;
+    margin: 4.4em auto 0;
 }
 
 header h2 {
@@ -190,39 +200,6 @@ header figcaption:first-of-type {
     z-index: 22;
 }
 
-@media only screen and (min-width: 760px) {
-    header {
-        display: flex;
-        justify-content: space-around;
-        padding: 0 1rem;
-        margin-top: 5.5rem;
-    }
-
-    header figure:first-of-type::before {
-        content: "";
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 99%;
-        background-image: linear-gradient(rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, .7));
-        z-index: 2;
-    }
-
-    header a figure {
-        display: block;
-        width: 100%;
-    }
-
-    header figcaption:first-of-type {
-        position: absolute;
-        line-height: 1.11;
-        padding: 1rem 1rem 0 1rem ;
-        bottom: 1em;
-        z-index: 22;
-    }
-}
-
 .header-articles {
     display: flex;
     padding: 1rem 0 1rem 1rem;
@@ -246,11 +223,31 @@ header figcaption:first-of-type {
     font-size: 14px;
 }
 
+.header-articles figure h2 {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: normal;
+}
+
+.header-articles:nth-child(n+3){
+    display: none;
+}
+
+.header-articles figure span {
+    display: none;
+}
+
 .article {
     padding: 1rem;
 }
 
-.article section > div {
+.article-header {
+    display: flex;
+    flex-direction: column;
+}
+
+.article-header section > div {
     margin-top: .5rem;
     margin-bottom: 1.33rem;
     font-size: 11px;
@@ -259,12 +256,23 @@ header figcaption:first-of-type {
     text-transform: uppercase;
 }
 
-.article__titel {
+.article-headliner {
+    padding: 1rem;
     margin-bottom: 1.5rem;
 }
 
-.article__titel span {
+.article-headliner span {
+    margin-right: 1rem;
     color: var(--darker-color);
+}
+
+.article-headliner time {
+    margin-left: 1rem;
+    color: var(--usefull-color);
+}
+
+.article-headliner em {
+    color: var(--usefull-color);
 }
 
 .article__story article {
@@ -343,6 +351,8 @@ header figcaption:first-of-type {
     flex-direction: column;
 }
 
+
+
 .discover-more h3 {
     margin-top: .17em;
     margin-bottom: 1.11em;
@@ -374,7 +384,6 @@ header figcaption:first-of-type {
 
 .stories {
     display: flex;
-    align-items: center;
     padding: 1rem;
     flex-direction: column;
 }
@@ -490,6 +499,7 @@ aside section a {
     padding: 1rem 0;
 }
 
+
 aside section a:first-child {
     padding: 0 0 1rem 0;
 }
@@ -540,6 +550,25 @@ aside section a span:last-child {
     line-height: 1;
     font-weight: 400;
     width: 100%;
+}
+
+
+aside section .latest-news {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 0;
+}
+
+aside section .latest-news time {
+    margin-bottom: 0.42rem;
+    color: rgb(136, 136, 136);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+aside section .latest-news p {
+    font-weight: 500;
 }
 
 footer {

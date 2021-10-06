@@ -140,3 +140,10 @@ h2 {
     font-weight: 500;
     letter-spacing: normal;
 }
+
+.header-articles figure h2 {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 100;
+    letter-spacing: normal;
+}
