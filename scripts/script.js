@@ -28,10 +28,6 @@ buttonSport.addEventListener("click", function() {
     };
 });
 
-
-
-
-
 // DARK SCHEME ALS HET DONKER WORDT!
 // Zorgt ervoor dat uren en minuten twee getalen worden.
 Object.prototype.twoDigits = function () {
@@ -43,9 +39,7 @@ timeOfDay = now.getHours().twoDigits() + ':' + now.getMinutes().twoDigits();
 
 if ('06:30' <= timeOfDay && timeOfDay <= '20:00') {
     document.documentElement.classList.add("lightMode");
-    localStorage.setItem("colorMode", JSON.stringify(false));
 }
 else {
     document.documentElement.classList.remove("lightMode");
-    localStorage.setItem("colorMode", JSON.stringify(true));
 }
