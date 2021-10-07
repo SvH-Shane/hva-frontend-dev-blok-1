@@ -581,6 +581,21 @@ footer {
     flex-direction: column;
 }
 
+footer .circle svg {
+    width: 24px;
+    height: 24px;
+}
+
+footer a svg {
+    width: 79px;
+    height: 28px;
+}
+
+footer .circle__small svg {
+    width: 24px;
+    height: 24px;
+}
+
 footer h2 {
     margin: 1rem 0;
     color: var(--primary-color);
