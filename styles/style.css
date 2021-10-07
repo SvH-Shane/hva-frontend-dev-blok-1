@@ -50,7 +50,7 @@ nav {
     z-index: 99;
 }
 
-nav section {
+nav div {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -207,6 +207,10 @@ header figcaption:first-of-type {
 .header-articles {
     display: flex;
     padding: 1rem 0 1rem 1rem;
+}
+
+.header-articles > a {
+    display: contents;
 }
 
 .header-articles figure {
@@ -417,6 +421,10 @@ header figcaption:first-of-type {
     margin: 1rem 0;
 }
 
+.story-slider a {
+    display: contents;
+}
+
 .story-slider h2 {
     font-family: "Effra";
     font-size: 18px;
@@ -534,11 +542,15 @@ aside section a svg:last-child {
     align-content: center;
 }
 
-aside section a p {
+aside section a div {
     display: flex;
     flex-direction: column;
     margin: auto;
     width: 100%;
+}
+
+aside section a div h4 {
+    font-weight: 500;
 }
 
 aside section a span {
